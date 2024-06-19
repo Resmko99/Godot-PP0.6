@@ -1,0 +1,44 @@
+{
+	"7": {
+		"Name": {"eng": "Varit"},
+		"Description": {"eng": "Varit v kotle"},
+		"icon": {"eng": "res://sprite/circle.png"},
+		"position_x": 300,
+		"position_y": 100
+	},
+	"8": {
+		"Name": {"eng": "Peremeshat"},
+		"Description": {"eng": "Peremeshat v kotle vashe varevo"},
+		"icon": {"eng": "res://sprite/circle_xplo.png"},
+		"position_x": 300,
+		"position_y": 200
+	},
+	"9": {
+		"Name": {"eng": "Udarit"},
+		"Description": {"eng": "Udarit kotel povoreshkoi"},
+		"icon": {"eng": "res://sprite/circle_xplo.png"},
+		"position_x": 300,
+		"position_y": 300
+	},
+	"10": {
+		"Name": {"eng": "Prokipuatit"},
+		"Description": {"eng": "Prokipuatit kotel"},
+		"icon": {"eng": "res://sprite/circle.png"},
+		"position_x": 300,
+		"position_y": 400
+	},
+	"11": {
+		"Name": {"eng": "Ostudit"},
+		"Description": {"eng": "Ostudit kotel"},
+		"icon": {"eng": "res://sprite/circle_xplo.png"},
+		"position_x": 300,
+		"position_y": 500
+	},
+	"12": {
+		"Name": {"eng": "Procedit"},
+		"Description": {"eng": "Procedit vodu"},
+		"icon": {"eng": "res://sprite/circle.png"},
+		"position_x": 300,
+		"position_y": 600
+	}
+}

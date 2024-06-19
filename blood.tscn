@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://ds04x23yfrcle"]
+
+[ext_resource type="Script" path="res://blood.gd" id="1_0pdl1"]
+[ext_resource type="Texture2D" uid="uid://d0kw1jso7d7x2" path="res://sprite/blood.png" id="2_dusng"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gdv08"]
+radius = 7.28011
+
+[node name="blood" type="Area2D"]
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+script = ExtResource("1_0pdl1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gdv08")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.328125, 0.328125)
+texture = ExtResource("2_dusng")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

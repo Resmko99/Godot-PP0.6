@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdbyn8kaw5uop"]
+
+[ext_resource type="Script" path="res://goodies_pick_up_object.gd" id="1_lyqyc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qgpcy"]
+radius = 47.0425
+
+[node name="GoodiesPickUpObject" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_lyqyc")
+
+[node name="GoodiesPickUpShape" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qgpcy")
+debug_color = Color(0.690196, 1, 0.27451, 0.419608)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

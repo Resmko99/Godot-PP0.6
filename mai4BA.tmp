@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxu0ysd1remq3"]
+
+[ext_resource type="Texture2D" uid="uid://b66ohwvetgjyb" path="res://sprite/grid.png" id="1_op8jp"]
+[ext_resource type="PackedScene" uid="uid://dvkrmgwrqpyf5" path="res://player.tscn" id="2_d1yy1"]
+[ext_resource type="PackedScene" uid="uid://mb8pbw816m6o" path="res://enemy.tscn" id="3_c56cy"]
+
+[node name="main" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.141176)
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(576, 576)
+scale = Vector2(4, 4)
+texture = ExtResource("1_op8jp")
+region_enabled = true
+region_rect = Rect2(0, 0, 320, 320)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_d1yy1")]
+position = Vector2(551, 296)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(2, 2)
+
+[node name="enemy" parent="." instance=ExtResource("3_c56cy")]
+position = Vector2(615, 223)

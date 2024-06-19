@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://dvkrmgwrqpyf5"]
+
+[ext_resource type="Texture2D" uid="uid://d2ghxxpf2ade8" path="res://sprite/player_sprite.png" id="1_0fde5"]
+[ext_resource type="Script" path="res://player.gd" id="1_nvo3h"]
+[ext_resource type="PackedScene" uid="uid://4ph0wrk8r02n" path="res://player_bullet.tscn" id="2_3g6fl"]
+[ext_resource type="PackedScene" uid="uid://cdbyn8kaw5uop" path="res://goodies_pick_up_object.tscn" id="4_db3ol"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_npnal"]
+radius = 9.0
+
+[node name="Player" type="CharacterBody2D" groups=["players"]]
+script = ExtResource("1_nvo3h")
+bullet = ExtResource("2_3g6fl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.296875, 0.296875)
+texture = ExtResource("1_0fde5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_npnal")
+
+[node name="GoodiesPickUpObject" parent="." instance=ExtResource("4_db3ol")]

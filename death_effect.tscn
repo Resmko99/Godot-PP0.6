@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://e64aeqhcovsx"]
+
+[ext_resource type="Script" path="res://death_effect.gd" id="1_g8moi"]
+[ext_resource type="Texture2D" uid="uid://dbt7af0tgerhn" path="res://sprite/xplo.png" id="2_g0ca5"]
+[ext_resource type="PackedScene" uid="uid://ds04x23yfrcle" path="res://blood.tscn" id="2_mtbf8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gdv08"]
+radius = 7.28011
+
+[node name="Area2D" type="Area2D"]
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+script = ExtResource("1_g8moi")
+blood = ExtResource("2_mtbf8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gdv08")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.328125, 0.328125)
+texture = ExtResource("2_g0ca5")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

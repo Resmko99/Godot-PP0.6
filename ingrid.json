@@ -1,0 +1,44 @@
+{
+	"1": {
+		"Name": {"eng": "Mandragora"},
+		"Description": {"eng": "Mandragora v kotel"},
+		"icon": {"eng": "res://sprite/circle.png"},
+		"position_x": 100,
+		"position_y": 100
+	},
+	"2": {
+		"Name": {"eng": "Glaz zmei"},
+		"Description": {"eng": "Glaz zmei v kotel"},
+		"icon": {"eng": "res://sprite/circle_xplo.png"},
+		"position_x": 100,
+		"position_y": 200
+	},
+	"3": {
+		"Name": {"eng": "Pero Phenixa"},
+		"Description": {"eng": "Pero Phenixa v kotel"},
+		"icon": {"eng": "res://sprite/circle_xplo.png"},
+		"position_x": 100,
+		"position_y": 300
+	},
+	"4": {
+		"Name": {"eng": "Netonushaia kursovyaia"},
+		"Description": {"eng": "Netonushaia kursovyaia v kotel"},
+		"icon": {"eng": "res://sprite/circle.png"},
+		"position_x": 100,
+		"position_y": 400
+	},
+	"5": {
+		"Name": {"eng": "Nelomaemoe yaico"},
+		"Description": {"eng": "Nelomaemoe yaico v kotel"},
+		"icon": {"eng": "res://sprite/circle_xplo.png"},
+		"position_x": 100,
+		"position_y": 500
+	},
+	"6": {
+		"Name": {"eng": "Chto-to strannoe"},
+		"Description": {"eng": "Chto-to strannoe"},
+		"icon": {"eng": "res://sprite/circle.png"},
+		"position_x": 100,
+		"position_y": 600
+	}
+}

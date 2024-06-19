@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv4ct0kbxbg65"]
+
+[ext_resource type="Script" path="res://weapon_pistol.gd" id="1_pjuff"]
+
+[node name="WeaponPistol" type="Node"]
+script = ExtResource("1_pjuff")
